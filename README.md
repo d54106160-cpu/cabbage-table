@@ -100,13 +100,6 @@ AI 通常會新增或修改以下檔案：
 
 ---
 
-## 🚀 部署方式（GitHub Pages）
-
-1. **Settings → Pages**
-2. Source 選 **Deploy from a branch**
-3. Branch 選 **main**、資料夾選 **/ (root)**，按 **Save**
-4. 約 1～2 分鐘後，頁面上方會出現網址
-
 ## 版權聲明
 
 - 妙招內容以自己的話改寫整理，創意歸原作者所有，每頁皆附原貼文連結。
