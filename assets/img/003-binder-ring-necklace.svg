@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="櫃門上固定一條透明活頁夾環，每個夾環掛一條項鍊">
+  <circle cx="120" cy="120" r="110" fill="#F3EAD3"/>
+  <g stroke="#2F4A34" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 木頭櫃門 -->
+    <rect x="34" y="40" width="172" height="164" rx="8" fill="#B98A5A" stroke-width="4"/>
+    <path d="M70 40 v164 M120 40 v164 M170 40 v164" stroke="#F3EAD3" stroke-width="2" opacity=".35"/>
+    <!-- 活頁夾環條（透明脊條） -->
+    <rect x="44" y="66" width="152" height="16" rx="5" fill="#FFFDF7" stroke-width="4"/>
+    <!-- 一個個 C 形夾環 -->
+    <g fill="none" stroke-width="3">
+      <path d="M56 82 q-6 8 0 14 q6 4 8 -2"/>
+      <path d="M76 82 q-6 8 0 14 q6 4 8 -2"/>
+      <path d="M96 82 q-6 8 0 14 q6 4 8 -2"/>
+      <path d="M116 82 q-6 8 0 14 q6 4 8 -2"/>
+      <path d="M136 82 q-6 8 0 14 q6 4 8 -2"/>
+      <path d="M156 82 q-6 8 0 14 q6 4 8 -2"/>
+      <path d="M176 82 q-6 8 0 14 q6 4 8 -2"/>
+    </g>
+  </g>
+  <!-- 項鍊：每環一條 -->
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <!-- 珍珠 -->
+    <path d="M58 96 v80" stroke="#FFFDF7" stroke-width="7" stroke-dasharray="0.1 8"/>
+    <path d="M78 96 q-3 40 0 62" stroke="#9AA3A0" stroke-dasharray="1 5"/>
+    <path d="M98 96 v88" stroke="#F5B935" stroke-dasharray="1 5"/>
+    <path d="M118 96 q2 34 0 54" stroke="#9AA3A0" stroke-dasharray="1 5"/>
+    <path d="M138 96 v74" stroke="#FFFDF7" stroke-width="7" stroke-dasharray="0.1 8"/>
+    <path d="M158 96 q-2 44 0 86" stroke="#9AA3A0" stroke-dasharray="1 5"/>
+    <path d="M178 96 v66" stroke="#F5B935" stroke-dasharray="1 5"/>
+  </g>
+  <!-- 墜子 -->
+  <g stroke="#2F4A34" stroke-width="3" stroke-linejoin="round">
+    <circle cx="58" cy="182" r="6" fill="#FFFDF7"/>
+    <path d="M78 160 l-6 8 l6 8 l6 -8 z" fill="#7DB46C"/>
+    <path d="M98 196 q-8 -4 -8 4 q0 6 8 10 q8 -4 8 -10 q0 -8 -8 -4 z" fill="#D9473B"/>
+    <circle cx="118" cy="156" r="6" fill="#F5B935"/>
+    <path d="M158 184 l-8 10 h16 z" fill="#B9DBA5"/>
+    <circle cx="178" cy="168" r="6" fill="#7DB46C"/>
+  </g>
+</svg>

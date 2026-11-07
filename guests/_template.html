@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 賓客頁模板：請複製本檔為 guests/NNN-slug.html 後替換所有 {{ }}，不要直接修改本檔。規則見 AGENTS.md -->
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No.{{NNN}} {{NAME}}｜高麗菜桌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../index.html">🥬 高麗菜<span>桌</span></a>
+      <nav><a href="../index.html">座位表</a></nav>
+    </div>
+  </header>
+
+  <main class="guest">
+    <a class="back" href="../index.html">← 回座位表</a>
+    <article class="guest-card">
+      <img src="../assets/img/{{NNN}}-{{SLUG}}.svg" alt="{{NAME}}插畫">
+      <div class="seat-no">No.{{NNN}}</div>
+      <h1>{{NAME}}</h1>
+      <ul class="tags">
+        {{TAGS}}<!-- 例：<li>🍳 廚房</li> -->
+      </ul>
+
+      <p class="pain">{{PAIN}}</p>
+
+      <h2>💡 神招做法</h2>
+      <ol class="steps">
+        {{STEPS}}<!-- 1～3 個 <li> -->
+      </ol>
+
+      <p class="source">📎 出處：{{SOURCE}}<!-- 例：@帳號 · YYYY-MM-DD · <a href="URL" target="_blank" rel="noopener">Threads 原貼文 ↗</a> --></p>
+    </article>
+
+    <nav class="pager">
+      {{PREV}}<!-- 例：<a href="002-xxx.html">← No.002 招式名</a>；第一位用 <span class="empty"></span> -->
+      {{NEXT}}<!-- 例：<a href="004-xxx.html">No.004 招式名 →</a>；最後一位用 <a href="../index.html">回座位表 →</a> -->
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    高麗菜桌 · 收集讓人想讓座的生活智慧。內容皆為改寫整理，原創歸原作者所有。
+  </footer>
+</body>
+</html>

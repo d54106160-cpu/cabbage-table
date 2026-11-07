@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高麗菜桌｜讓人想讓座的生活智慧</title>
+  <meta name="description" content="收集 Threads 上爆紅、可以去坐「高麗菜煮蛋那桌」的生活妙招。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">🥬 高麗菜<span>桌</span></a>
+      <nav><a href="#seats">座位表</a></nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>請入座，<br><em>高麗菜</em>主桌</h1>
+        <p>火鍋裡把蛋打在高麗菜葉上煮，這一招在 Threads 爆紅後，網友開始把各種聰明又省錢的妙招，都請去「跟高麗菜煮蛋坐同一桌」。</p>
+        <p>這裡就是那張桌子。看看哪一招，戳中你的日常困擾？</p>
+        <span class="count">目前入座：<span id="guest-count">0</span> 位</span>
+      </div>
+      <img src="assets/img/table-hero.svg" alt="高麗菜主桌插畫">
+    </section>
+
+    <!-- 標籤篩選：data-filter 值需對應 AGENTS.md 第 6 節 -->
+    <nav class="filters" aria-label="分類篩選">
+      <button class="active" data-filter="all">全部</button>
+      <button data-filter="kitchen">🍳 廚房</button>
+      <button data-filter="cleaning">🧹 清潔</button>
+      <button data-filter="storage">📦 收納</button>
+      <button data-filter="home">🏠 居家</button>
+      <button data-filter="festival">🧧 節慶</button>
+      <button data-filter="outdoor">🎒 出門</button>
+      <button data-filter="tech">📱 3C</button>
+    </nav>
+
+    <!-- 座位表：新增賓客時，在最後面複製一張 seat-card -->
+    <main class="seats" id="seats">
+
+      <article class="seat-card" data-tags="kitchen">
+        <span class="badge-main">👑 主桌</span>
+        <a href="guests/001-cabbage-egg.html">
+          <img src="assets/img/001-cabbage-egg.svg" alt="">
+          <div class="seat-no">No.001</div>
+          <h2>高麗菜煮蛋</h2>
+          <p>火鍋裡打蛋，不是散成蛋花，就是黏在湯勺上洗不掉。</p>
+          <ul class="tags"><li>🍳 廚房</li></ul>
+        </a>
+      </article>
+
+      <article class="seat-card" data-tags="festival home">
+        <a href="guests/002-magnet-couplets.html">
+          <img src="assets/img/002-magnet-couplets.svg" alt="">
+          <div class="seat-no">No.002</div>
+          <h2>磁鐵貼春聯</h2>
+          <p>家裡大門是金屬門，每年換春聯都留一堆殘膠，刮到手痠還刮不乾淨。</p>
+          <ul class="tags"><li>🧧 節慶</li><li>🏠 居家</li></ul>
+        </a>
+      </article>
+
+      <article class="seat-card" data-tags="storage">
+        <a href="guests/003-binder-ring-necklace.html">
+          <img src="assets/img/003-binder-ring-necklace.svg" alt="">
+          <div class="seat-no">No.003</div>
+          <h2>活頁夾掛項鍊</h2>
+          <p>項鍊收在一起總是纏成一團，要戴的時候解到爆氣。</p>
+          <ul class="tags"><li>📦 收納</li></ul>
+        </a>
+      </article>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    高麗菜桌 · 收集讓人想讓座的生活智慧。內容皆為改寫整理，原創歸原作者所有。<br>
+    想推薦新賓客？新增規則都寫在專案的 AGENTS.md。
+  </footer>
+
+  <script>
+    // 自動計算入座人數 + 標籤篩選
+    const cards = document.querySelectorAll('.seat-card');
+    document.getElementById('guest-count').textContent = cards.length;
+
+    document.querySelectorAll('.filters button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(card => {
+          const tags = card.dataset.tags.split(' ');
+          card.classList.toggle('hidden', f !== 'all' && !tags.includes(f));
+        });
+      });
+    });
+  </script>
+</body>
+</html>

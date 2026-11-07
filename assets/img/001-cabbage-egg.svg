@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="火鍋湯面上漂著一片高麗菜葉，葉子上托著一顆蛋">
+  <circle cx="120" cy="120" r="110" fill="#F3EAD3"/>
+  <g stroke="#2F4A34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 蒸氣 -->
+    <path d="M88 52 q-8 -10 0 -20 q8 -10 0 -20" fill="none"/>
+    <path d="M120 46 q-8 -10 0 -20 q8 -10 0 -20" fill="none"/>
+    <path d="M152 52 q-8 -10 0 -20 q8 -10 0 -20" fill="none"/>
+    <!-- 鍋身 -->
+    <path d="M36 128 h168 l-12 58 q-3 14 -18 14 h-108 q-15 0 -18 -14 z" fill="#9AA3A0"/>
+    <path d="M36 140 h-14 M204 140 h14" fill="none"/>
+    <!-- 湯面 -->
+    <ellipse cx="120" cy="128" rx="88" ry="34" fill="#F5B935"/>
+    <!-- 高麗菜葉 -->
+    <path d="M54 126 q4 -30 40 -34 q20 -16 46 -4 q36 -2 48 30 q-6 22 -40 26 q-24 10 -50 2 q-34 -2 -44 -20 z" fill="#7DB46C"/>
+    <path d="M70 126 q50 -8 104 -2" fill="none" stroke="#B9DBA5"/>
+    <path d="M100 104 q4 10 6 22 M140 98 q-2 14 -4 28" fill="none" stroke="#B9DBA5"/>
+    <!-- 蛋 -->
+    <path d="M90 124 q-2 -18 24 -20 q14 -10 30 2 q16 6 8 20 q-8 14 -34 12 q-26 2 -28 -14 z" fill="#FFFDF7"/>
+    <circle cx="122" cy="120" r="13" fill="#F5B935"/>
+  </g>
+  <circle cx="117" cy="115" r="4" fill="#FFFDF7"/>
+</svg>
